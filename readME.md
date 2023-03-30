@@ -1,4 +1,4 @@
-### School Project: Pokédex
+# School Project: Pokédex
 
 ## Description
 Using the [The RESTful Pokémon API (PokeAPI)](https://pokeapi.co/) this project was built to resemble a tool similar to a "Pokédex", a device that holds a catalog and provide information regarding different species of Pokémon, featured in the popular anime series.
