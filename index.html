@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>Pokédex</h1>
+            </header>
+            <div class="search_wrapper">
+                <input id="search_field" type="text" placeholder="Search Pokémon..">
+            </div>
+            <h2>Generation: <span id="current_gen">All</span></h2>
+            <div class="generations_wrapper">
+                <button id="generation_1" class="gen_filter">
+                    <p>I</p>
+                </button>
+                <button id="generation_2" class="gen_filter">
+                    <p>II</p>
+                </button>
+                <button id="generation_3" class="gen_filter">
+                    <p>III</p>
+                </button>
+                <button id="generation_4" class="gen_filter">
+                    <p>IV</p>
+                </button>
+                <button id="generation_5" class="gen_filter">
+                    <p>V</p>
+                </button>
+                <button id="generation_6" class="gen_filter">
+                    <p>VI</p>
+                </button>
+                <button id="generation_7" class="gen_filter">
+                    <p>VII</p>
+                </button>
+                <button id="generation_8" class="gen_filter">
+                    <p>VIII</p>
+                </button>
+                <button id="generation_9" class="gen_filter">
+                    <p>IX</p>
+                </button>
+            </div>
+
+            <h2>Type:<span id="current_filter">All</span>
+            </h2>
+            <div class="filters">
+                <button id="filter_water" class="filter" data-type="water"><img src="pokemon_icons/water.png"
+                        alt="water">
+                    <p>Water</p>
+                </button>
+                <button id="filter_steel" class="filter" data-type="steel"><img src="pokemon_icons/steel.png"
+                        alt="steel">
+                    <p>Steel</p>
+                </button>
+                <button id="filter_rock" class="filter" data-type="rock"><img src="pokemon_icons/rock.png" alt="rock">
+                    <p>Rock</p>
+                </button>
+                <button id="filter_psychic" class="filter" data-type="psychic"><img src="pokemon_icons/psychic.png"
+                        alt="psychic">
+                    <p>Psychic</p>
+                </button>
+                <button id="filter_poison" class="filter" data-type="poison"><img src="pokemon_icons/poison.png"
+                        alt="poison">
+                    <p>Poison</p>
+                </button>
+                <button id="filter_normal" class="filter" data-type="normal"><img src="pokemon_icons/normal.png"
+                        alt="normal">
+                    <p>Normal</p>
+                </button>
+                <div id="filter_ice" class="filter" data-type="ice"><img src="pokemon_icons/ice.png" alt="ice">
+                    <p>Ice</p>
+                </div>
+                <div id="filter_ground" class="filter" data-type="ground"><img src="pokemon_icons/ground.png"
+                        alt="ground">
+                    <p>Ground</p>
+                </div>
+                <div id="filter_fighting" class="filter" data-type="fighting"><img src="pokemon_icons/fighting.png"
+                        alt="fighting">
+                    <p>Fighting</p>
+                </div>
+                <div id="filter_fairy" class="filter" data-type="fairy"><img src="pokemon_icons/fairy.png" alt="fairy">
+                    <p>Fairy</p>
+                </div>
+                <div id="filter_electric" class="filter" data-type="electric"><img src="pokemon_icons/electric.png"
+                        alt="electric">
+                    <p>Electric</p>
+                </div>
+                <div id="filter_dark" class="filter" data-type="dark"><img src="pokemon_icons/dark.png" alt="dark">
+                    <p>Dark</p>
+                </div>
+                <div id="filter_bug" class="filter" data-type="bug"><img src="pokemon_icons/bug.png" alt="bug">
+                    <p>Bug</p>
+                </div>
+                <div id="filter_dragon" class="filter" data-type="dragon"><img src="pokemon_icons/dragon.png"
+                        alt="dragon">
+                    <p>Dragon</p>
+                </div>
+                <div id="filter_fire" class="filter" data-type="fire"><img src="pokemon_icons/fire.png" alt="fire">
+                    <p>Fire</p>
+                </div>
+                <div id="filter_flying" class="filter" data-type="flying"><img src="pokemon_icons/flying.png"
+                        alt="flying">
+                    <p>Flying</p>
+                </div>
+                <div id="filter_ghost" class="filter" data-type="ghost"><img src="pokemon_icons/ghost.png" alt="ghost">
+                    <p>Ghost</p>
+                </div>
+                <div id="filter_grass" class="filter" data-type="grass"><img src="pokemon_icons/grass.png" alt="grass">
+                    <p>Grass</p>
+                </div>
+            </div>
+
+            <div class="button_wrapper">
+                <button id="reset_button" type="submit">Reset Filters</button>
+            </div>
+        </section>
+        <div class="cardsGrid">
+            <div class="cardContainer">
+                <div class="data"></div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </main>
+</body>
+
+</html>

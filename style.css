@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(184, 0, 0), red, rgb(184, 0, 0));
+    font-family: 'DynaPuff', cursive;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    padding: 1rem;
+    text-shadow: 0 0 10px white;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    padding: 1rem;
+    text-shadow: 0 0 10px white;
+}
+
+span {
+    padding: 0.5rem;
+}
+
+section {
+    background-image: linear-gradient(rgba(99, 166, 218, 0.824), rgba(255, 254, 254, 0.502)), url(images/don-h-emg8puH9Smc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 5px goldenrod solid;
+}
+
+.search_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#reset_button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(184, 0, 0);
+    box-shadow: 2px 2px 5px black;
+    border: none;
+    color: white;
+    font-family: 'DynaPuff', cursive;
+    margin: 1rem;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+#reset_button:active {
+    box-shadow: none;
+    background-color: steelblue;
+    border-radius: 5px;
+}
+
+#search_field {
+    width: 180px;
+    height: 25px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    font-family: 'DynaPuff', cursive;
+    border: 2px rgb(22, 118, 147) solid;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter {
+    height: 65px;
+    width: 65px;
+    color: rgb(188, 219, 245);
+    background-color: rgb(22, 118, 147);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px black;
+    position: relative;
+    border: none;
+    font-family: 'DynaPuff', cursive;
+    font-size: 16px;
+}
+
+.filter img {
+    width: 40px;
+}
+
+
+
+.generations_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gen_filter {
+    height: 65px;
+    width: 65px;
+    color: rgb(188, 219, 245);
+    background-color: rgb(16, 80, 99);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px black;
+    border: none;
+    font-family: 'DynaPuff', cursive;
+    font-size: 16px;
+}
+
+.filter:active,
+.gen_filter:active {
+    background-color: rgb(147, 186, 217);
+    box-shadow: none;
+    box-shadow: 0 0 10px white;
+    color: black;
+}
+
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 400px;
+    width: 200px;
+    height: auto;
+    width: auto;
+    background-image: linear-gradient(rgba(70, 131, 180, 0.899), rgba(0, 0, 0, 0.702)), url(https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: capitalize;
+    text-shadow: 0 0 4px black;
+    border-radius: 5px;
+
+}
+
+.pokemon_wrapper {
+    margin: 1rem;
+    padding: 3px;
+    background: linear-gradient(to bottom right, goldenrod, rgb(38, 99, 99));
+    position: relative;
+    font-size: 16px;
+}
+
+.pokemon_wrapper:hover {
+    transform: scale(1.1);
+}
+
+.cardContainer {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.poke_name {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.data img {
+    height: 15vh;
+    width: auto;
+}
+
+.type_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.image_border {
+    margin: 1rem;
+    padding: 3px;
+    background: linear-gradient(to bottom right, goldenrod, rgb(38, 99, 99));
+    position: relative;
+}
+
+.type_img p {
+    padding: 0.5rem;
+}
+
+.type_img img {
+    height: 3vh;
+    margin: 0.5rem;
+}
+
+.image_container {
+    background-image: linear-gradient(aliceblue, goldenrod);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.image_container img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Pokémon card image animation */
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
